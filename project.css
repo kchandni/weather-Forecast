@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+   /* box-sizing: border-box; */
+}
+/*.row {
+    display: flex;
+    margin-top: 70px;
+    margin-left: 100px;
+  }*/
+  
+.column {
+    flex: 50%;
+    margin-top: 700px;
+    padding: 10px;
+    width: 150vh;
+    height: 300px; 
+    margin-left: 220px;
+    
+  }
+ /*for scroll */
+  html {
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+
+    scroll-behavior: smooth;
+}
+  /*html { overflow-y: scroll; overflow-x:hidden; }*/
+
+  body{
+
+    background: #353a47;
+   /*background-image: url("https://i.gifer.com/origin/20/2044500a9a0cef20ef935c31946538a1.gif");*/
+    height: 520vh;
+    
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: 'Montserrat', sans-serif;
+    background-size: cover;
+}
+/*navigation part */
+.navigation{
+    width: auto;
+    height: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: larger;
+    
+    padding: 25px;
+}
+ol{
+    list-style-type: none;
+    
+}
+
+ol li {
+    display: inline;
+}
+
+
+/* for map*/
+#map{
+    margin-top: 30px;
+    margin-left: 1200px;
+ }
+ #map_style{
+     font-size: larger;
+ 
+ }
+/* input text*/
+ .searchInputBox{
+    width: 55vh;
+    margin: auto;
+    background-color:black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 2px #00FEDE;
+    margin-top: 80px;
+ }
+
+ .city-name{
+    width: 100%;
+    background-color: rgb(216, 189, 141);
+    border: none;
+    outline: none;
+    color: rgb(82, 40, 40);
+    font-size: 1.3rem;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0,10px;
+    text-align: center;
+}
+
+.city-name:focus{
+    background-color: white;
+}
+
+/*weather details */
+.app-main{
+    width: 55vh;
+    margin-left: 480px;
+    margin-top: 30px;
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+}
+.app-main > * {
+ margin-bottom: 20px;
+}
+
+.weather-body{
+    display: none;
+    color: rgb(10, 10, 10);
+    padding: 20px;
+    line-height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.6);
+    height: 80vh;
+    font-weight: bold;
+    background-image: url("https://news-cdn.softpedia.com/images/news2/YoWindow-for-iOS-a-User-Friendly-Animated-Weather-App-18.png");
+    -webkit-box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+	        box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+	-webkit-transition: -webkit-transform 300ms ease;
+	transition: -webkit-transform 300ms ease;
+	-o-transition: transform 300ms ease;
+	transition: transform 300ms ease;
+	transition: transform 300ms ease, -webkit-transform 300ms ease;
+	-webkit-transform: translateZ(0) scale(1.02) perspective(1000px);
+	        transform: translateZ(0) scale(1.02) perspective(1000px);
+}
+
+.weather-body:hover {
+	-webkit-transform: scale(1.1) perspective(1500px) ;
+	        transform: scale(1.1) perspective(1500px) ;
+}
+
+.location{
+    font-weight: 800;
+}
+
+/*sugggestion */
+
+.suggestion_css{
+    width: 55vh;
+    margin-left: 475px;
+    margin-top: -140vh;
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+
+}
+
+.suggestion{
+
+
+    display: none;
+    color: rgb(31, 50, 77);
+    padding: 20px;
+    line-height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.6);
+    height: 50vh;
+    padding: 10px, 10px, 10px, 10px;
+    font-weight: bold;
+    -webkit-box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+	        box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+	-webkit-transition: -webkit-transform 300ms ease;
+	transition: -webkit-transform 300ms ease;
+	-o-transition: transform 300ms ease;
+	transition: transform 300ms ease;
+	transition: transform 300ms ease, -webkit-transform 300ms ease;
+	-webkit-transform: translateZ(0) scale(1.02) perspective(1000px);
+	        transform: translateZ(0) scale(1.02) perspective(1000px);
+
+
+
+}
+.suggestion:hover {
+	-webkit-transform: scale(1.1) perspective(1500px) ;
+	        transform: scale(1.1) perspective(1500px) ;
+}
+.suggestion:focus{
+    background-color: white;
+}
+/* for button*/
+.button{
+    width: 50%;
+    background-color:rgba(20, 48, 35, 0.938);
+    border: none;
+    outline: none;
+    color:rgb(131, 125, 125);
+    font-size: 1rem;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0px,10px;
+    text-align: center;
+}
+
+/*aqi graph*/
+
+.chart:hover {
+    background-color: rgba(231, 227, 227, 0.6)
+}
+
+.week-container{
+    margin-left: 150px;
+}
+
+.week-list {
+	list-style-type: none;
+    padding: 0;
+    width: 150vh;
+   
+    float: center;
+	margin: 10px 35px;
+	-webkit-box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25);
+	        box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+    background: rgba(255,255,255,0.6)
+    
+}
+
+.week-list>li {
+	float: center;
+	padding: 15px;
+	cursor: pointer;
+	-webkit-transition: 200ms ease;
+	-o-transition: 200ms ease;
+	transition: 200ms ease;
+	border-radius: 10px;
+}
+
+.week-list>li:hover {
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
+	background: #fff;
+	color: #222831;
+	-webkit-box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2);
+	        box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2)
+}
+
+/*.week-list>li.active {
+	background: #fff;
+	color: #222831;
+	border-radius: 10px;
+}
+*/
+.week-list>li .day-name {
+	display: block;
+	margin: 10px 0 0 0;
+	text-align: center;
+}
+
+.week-list>li .day-icon {
+	display: block;
+	height: 30px;
+	width: auto;
+	margin: 0 auto;
+}
+
+.week-list>li .day-temp {
+	display: block;
+	text-align: center;
+	margin: 10px 0 0 0;
+    font-weight: 700;
+    float: center;
+}
+
+.weather-icon.feather {
+	height: 5em;
+    width: auto;
+    margin-right: 5px;
+}
+
+.weather.icon{
+    display: inline-block;
+	height: 0.8em;
+	width: auto;
+	margin-right: 5px;
+}
+
+.location-button .feather {
+	height: 5em;
+	width: auto;
+	margin-right: 5px;
+}
+
+.location-icon {
+	display: inline-block;
+	height: 0.8em;
+	width: auto;
+	margin-right: 5px;
+}

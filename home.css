@@ -1,0 +1,92 @@
+.navigation{
+    width: auto;
+    height: 25px;
+    text-align: right;
+    text-transform: capitalize;
+    font-size: larger;
+    padding: 25px;
+    /*background-color: rgba(0, 0, 0, 0.486);*/
+    margin-bottom: auto;
+}
+ol{
+    list-style-type: none;
+    
+}
+
+ol li {
+    display: inline;
+    padding-inline: 10px;
+    font-weight: bolder;
+}
+
+.info{
+    margin-top: 10px;
+    text-align: center;
+    background-image: url("https://steamuserimages-a.akamaihd.net/ugc/266088228494599576/10A06F5AF610BF3662D7B4AA295C3C3DFD1556AD/");
+    height: 120vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: 'Montserrat', sans-serif;
+    background-size: cover;
+    font-weight: bolder;
+}
+
+.gallery{
+  margin-bottom: 20px;
+}
+
+img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: block;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+ 
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,.demo:hover {
+    opacity: 1;
+  }

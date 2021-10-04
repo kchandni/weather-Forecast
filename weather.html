@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewpoint" content="width=device-width, intial-scaled=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/foesomnt-awe.min.css">
+            <link rel="stylesheet" href="project.css">
+            <title>Weather App</title>
+            
+        </head>
+        <body>
+
+            <div class="navigation" id="navigation" >
+                <ol>
+                    <li><a href="#app-main" style="color: black;" ><i><b>For temperature</i></b></a></li>&nbsp &nbsp &nbsp &nbsp
+                    <li><a href="#suggestion_css" style="color: black;" ><i><b> Suggestion</i></b></a></li>&nbsp &nbsp &nbsp &nbsp
+                    <li><a href="#three-days" style="color: black;"><i><b>For Three Days Weather</i></b></a></li>&nbsp &nbsp &nbsp &nbsp
+                    <li><a href="#column" style="color: black;"><i><b>For aqi graphs</i></b></a></li>&nbsp &nbsp &nbsp &nbsp
+                    <li><a href="#uvi" style="color: black;" ><i><b>For uvi graph</i></b></a></li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                   
+                    <li><a href="home.html" style="color: black;" ><i><b>Back to home</i></b></a></li>
+                    
+                </ol>
+
+                
+
+           </div>
+
+            <div id="map">
+                <a href="map.html" id="map_style" target="_blank" style="color: black;"><b><I>FOR MAP</I></b></a>
+             </div>
+
+           
+
+
+            <div class="searchInputBox">
+                <!input type="text" id = "uname" class = "username" placeholder="Enter Username" name="uname" required>
+                <input type="search" id="city-name" class="city-name" placeholder="Enter your city name" autocomplete="off" name="city-name" required>
+            
+            </div>
+
+           <!--<div class="row">-->
+               
+                    <div class="app-main" id="app-main">
+                      <div class="weather-body">
+                            <div class="location">
+                                <div class="city" id="city">  </div>
+                                <div class="date" id="date"> </div>
+                            </div>
+
+                            <div class="weather-status">
+                                <div class="temp" id="temp">  </div>
+
+                                <div class="feels" id="feels">  </div>
+
+                                <div class="weather-info" id="weather-info"></div>
+
+                                <div class="min-max" id="min-max"></div>
+
+                                <div class="aqi" id="aqi"></div>
+
+                                <div class="wind" id="wind">  </div>
+
+                                <div class="clouds" id="clouds">  </div>
+
+                                <div class="humidity" id="humidity">  </div>
+
+                                <div class="sunrise" id="sunrise">  </div>
+
+                                <div class="sunset" id="sunset">  </div>
+
+                                
+                    
+                            </div>
+                    
+                            
+
+                        </div>
+                    
+                    </div>
+
+                    <br><br><br>
+                   
+                    <br>
+
+                    <div class="week-container" id="three-days">
+                        
+                        <ul class="week-list" id="week-list">
+                          <!-- <li class="active"></li> -->
+                        <div class="clear"></div>
+                        </ul>
+                      </div>
+                      <br><br>
+    
+                
+                <div class="column" id="column">
+                    
+                    <div class="chart"><canvas id="myChart1"></canvas></div>
+                    <br><br><br><br>
+                    <div class="chart"><canvas id="myChart2"></canvas></div>
+                    <br><br><br><br>
+                    <div class="chart"><canvas id="myChart3"></canvas></div>
+                    <br><br><br><br><br><br><br><br><br>
+                    <div class="chart" id="uvi"><canvas id="myChart4"></canvas></div>
+                
+                </div>
+          <!-- </div> --> 
+     <div class="suggestion_css" id="suggestion_css">
+            <div class = "suggestion">
+                <button class="button" onclick="renderSuggestions()">Suggestions</button>
+                <ul id="suggestions"></ul>
+            </div>
+        </div>
+        <script src="https://unpkg.com/feather-icons"></script> 
+         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+         <script src="project.js"></script>
+         <script>feather.replace()</script>
+         
+
+        </body>
+    </html>
